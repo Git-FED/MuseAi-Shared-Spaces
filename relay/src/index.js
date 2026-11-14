@@ -1,0 +1,1 @@
+export default { async fetch(request, env) { const url=new URL(request.url); if(url.pathname==='/health') return Response.json({ok:true,status:'proposed'}); return Response.json({error:'Relay scaffold only',path:url.pathname},{status:501}); } };

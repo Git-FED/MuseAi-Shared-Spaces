@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Support Git-FED — Muse Shared Spaces</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .support-shell{max-width:980px;margin:0 auto;padding:70px 0 100px}.gate{max-width:720px;margin:0 auto 42px;padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,95,109,.12),rgba(255,255,255,.03));border-radius:18px}.gate label{display:flex;gap:12px;align-items:flex-start;color:var(--paper);font-weight:600}.gate input{accent-color:var(--coral);margin-top:4px}.gate small{display:block;color:var(--muted);margin:10px 0 0 28px}.support-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.support-card{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:25px;min-height:190px}.support-card.wide{grid-column:1/-1}.support-card h2{margin:0 0 7px;font-size:25px}.support-card p{color:var(--muted);margin:0 0 18px}.provider-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.support-card iframe{max-width:100%;border-radius:8px}.provider-button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:9px 14px;border-radius:7px;background:#fff;color:#111;font-weight:700;font-size:13px}.provider-button.github{background:#24292f;color:#fff}.provider-button.kofi{background:#00b9fe;color:#fff}.provider-button.bmac{background:#ffdd00;color:#111}.provider-button.crypto{background:#fff;color:#111}.paypal-wrap,.stripe-wrap{min-height:65px}.substack-embed{max-width:480px;background:#fff;color:#1a1a1a;border-radius:8px;padding:22px}.substack-embed h3{margin:0 0 6px;font-size:21px}.substack-embed p{color:#6b6b6b}.substack-row{display:flex;gap:8px}.substack-row input{min-width:0;flex:1;padding:11px;border:1px solid #d6d6d6;border-radius:4px}.substack-row button{padding:11px 15px;background:#ff6719;border:0;border-radius:4px;color:#fff;font-weight:700}.discord-frame{max-width:100%;border:0;border-radius:10px}.locked{filter:blur(5px);pointer-events:none;user-select:none}.support-card[aria-hidden="true"]{display:none}@media(max-width:760px){.support-grid{grid-template-columns:1fr}.support-card.wide{grid-column:auto}.support-shell{padding-top:45px}.substack-row{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <div class="noise"></div>
+    <div class="wrap">
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="mark">✦</span><span>MUSE / SHARED SPACES</span></a>
+        <div class="navlinks"><a href="docs.html">DOCS</a><a href="relay.html">RELAY</a><a href="index.html#how">THE LOOP</a></div>
+        <a class="button ghost" href="index.html">← Home</a>
+      </nav>
+      <main class="support-shell">
+        <header class="page-hero reveal" style="padding-top:0">
+          <div class="eyebrow">GIT-FED / SUPPORT HUB</div>
+          <h1>Keep the<br><span style="color:var(--coral)">loop alive.</span></h1>
+          <p class="lede">Choose a subscription, one-time support option, sponsorship, or community channel. This page only opens the provider widgets; it does not charge you automatically.</p>
+        </header>
+        <section class="gate reveal" id="age-gate">
+          <label><input type="checkbox" id="age-confirm"> I confirm that I am 18 or older and want to view the payment and subscription options.</label>
+          <small>This is a front-end age confirmation, not identity verification. Provider terms, payment rules, and local laws still apply.</small>
+        </section>
+        <section id="support-options" class="support-grid locked" aria-hidden="true">
+          <article class="support-card wide">
+            <div class="eyebrow">01 / SUBSCRIBE</div>
+            <h2>Recurring support</h2>
+            <p>Choose a recurring subscription route. Provider checkout and confirmation happen on the provider’s own systems.</p>
+            <div class="paypal-wrap" id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y"></div>
+            <script src="https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+            <script>
+              window.initPaypal = function(){ if(!window.paypal) return; paypal.Buttons({style:{shape:'rect',color:'gold',layout:'vertical',label:'subscribe'},createSubscription:function(data,actions){return actions.subscription.create({plan_id:'P-4FD24238VX4902214NK2XP2Y',quantity:1});},onApprove:function(data){alert('Subscription approved: '+data.subscriptionID);}}).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y'); };
+            </script>
+            <div class="provider-row" style="margin-top:18px"><div class="stripe-wrap"><stripe-buy-button buy-button-id="buy_btn_1UJKaaJaRf233kfWKZ81fcIe" publishable-key="pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8"></stripe-buy-button></div></div>
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+          </article>
+          <article class="support-card">
+            <div class="eyebrow">02 / SPONSOR</div><h2>GitHub Sponsors</h2><p>Support the open project through GitHub.</p>
+            <iframe src="https://github.com/sponsors/Git-FED/card" title="Sponsor Git-FED" width="600" height="225" frameborder="0" scrolling="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div style="margin-top:12px"><a class="provider-button github" href="https://github.com/sponsors/Git-FED" target="_blank" rel="noopener">Sponsor Git-FED ↗</a></div>
+          </article>
+          <article class="support-card">
+            <div class="eyebrow">03 / ONE-TIME</div><h2>Donation shelf</h2><p>Pick a one-time support route.</p>
+            <div class="provider-row"><a class="provider-button kofi" href="https://ko-fi.com/fedpromptly" target="_blank" rel="noopener">Ko-fi ↗</a><a class="provider-button bmac" href="https://www.buymeacoffee.com/fedpromptly" target="_blank" rel="noopener">Buy me a book ↗</a><a class="provider-button crypto" href="https://nowpayments.io/payment/?iid=5997958570&source=button" target="_blank" rel="noopener">Crypto / Bitcoin ↗</a></div>
+          </article>
+          <article class="support-card wide">
+            <div class="eyebrow">04 / NEWSLETTER</div><h2>Subscribe to GitFed</h2><p>Use the publication’s official subscription endpoint.</p>
+            <div class="substack-embed"><h3>Subscribe to GitFed</h3><p>Thousands of subscribers</p><form id="substack-form"><div class="substack-row"><input id="substack-email" type="email" placeholder="Type your email…" required><button type="submit">Subscribe</button></div><p id="substack-msg" style="margin:10px 0 0"></p></form><small>By subscribing, you agree to <a href="https://substack.com/tos" target="_blank" rel="noopener">Substack Terms</a> and <a href="https://substack.com/privacy" target="_blank" rel="noopener">Privacy</a>.</small></div>
+          </article>
+          <article class="support-card wide">
+            <div class="eyebrow">05 / COMMUNITY</div><h2>Join the conversation</h2><p>Open the Git-FED Discord community in the embedded widget, or choose a server directory with separate public and 18+ request flows.</p>
+            <iframe class="discord-frame" src="https://discord.com/widget?id=1400235929154879490&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe><div style="margin-top:18px"><a class="button primary" href="discord.html">Open Discord server directory ↗</a></div>
+          </article>
+        </section>
+      </main>
+      <div class="footer"><span>PAYMENT PROVIDERS ARE EXTERNAL SERVICES</span><a href="index.html">BACK TO HOME ↑</a></div>
+    </div>
+  </div>
+  <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+  <script>
+    const gate=document.getElementById('age-confirm');const options=document.getElementById('support-options');
+    gate.addEventListener('change',()=>{const open=gate.checked;options.classList.toggle('locked',!open);options.setAttribute('aria-hidden',String(!open));if(open){if(window.initPaypal)window.initPaypal();if(window.kofiWidgetOverlay)kofiWidgetOverlay.draw('fedpromptly',{'type':'floating-chat','floating-chat.donateButton.text':'Support me','floating-chat.donateButton.background-color':'#00b9fe','floating-chat.donateButton.text-color':'#fff'});}});
+    document.getElementById('substack-form').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('substack-email').value.trim();const msg=document.getElementById('substack-msg');if(!email){msg.textContent='Please enter an email address.';return;}window.open('https://gitfed.substack.com/subscribe?email='+encodeURIComponent(email),'_blank','noopener');msg.textContent='Opening the official subscribe page…';});
+  </script>
+</body>
+</html>

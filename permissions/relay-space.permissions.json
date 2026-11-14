@@ -1,0 +1,14 @@
+{
+  "type": "relay-space",
+  "participants": {
+    "owner": [
+      "approve",
+      "revoke",
+      "deploy"
+    ],
+    "member": [
+      "add_post",
+      "edit_text"
+    ]
+  }
+}

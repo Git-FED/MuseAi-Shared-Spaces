@@ -1,0 +1,1 @@
+{"type":"object","required":["participants"],"properties":{"participants":{"type":"array"}}}
